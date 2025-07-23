@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+body{
+  position:relative;
+    background-image: url("/Register\ -\ Login.gif");
+    background-size: cover;
+    background-position: center;
+}
+#terminal{
+    position: absolute;
+    top:220px;
+    left:30px;
+    align-items: center;
+    height: 520px;
+    width:980px;
+    background-image: url("/terminal.webp");
+    opacity:0.9;
+    border:1px solid white;
+    box-shadow: 0 0 3px #0f0, 0 0 5px #0f0, 0 0 8px #0f0, 0 0 10px #0f0;
+
+}
+#auth{
+  color:#863cee;
+  position :absolute;
+  top:260px;
+  left :407px;
+  opacity: 0.6;
+  font-size:15px;
+  font-weight:700;
+    font-family: "Inconsolata", monospace;
+  font-optical-sizing: auto;
+  font-variation-settings:
+    "wdth" 100;
+
+
+}
+input{
+
+   position :absolute;
+  top:260px;
+  left :480px;
+  background: transparent;
+  border: none;
+  color:#1E90FF;
+    opacity: 0.6;
+     font-size:15px;
+      font-weight:800;
+    font-family: "Inconsolata", monospace;
+  font-optical-sizing: auto;
+  font-variation-settings:
+    "wdth" 100;
+     animation: blink 1s step-start infinite;
+}
+input:hover,
+input:focus {
+  outline: none;
+  border: none;
+  box-shadow: none;
+}
+@keyframes blink {
+  0%, 100% {
+    color:#1E90FF;
+  }
+  50% {
+    color: transparent;
+  }
+}
+#here{
+ position: absolute;
+  
+  left :750px;
+  height:60px;
+  width: 150px;
+  border-radius: 30px;
+    color: #fff;
+  background-color: black;
+  border: 2px solid #fff;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff;
+  box-shadow: 0 0 5px #fff, 0 0 20px #fff, 0 0 40px #fff;
+  transition: 0.3s;
+  margin-top:30px;
+   font-family: "Press Start 2P", system-ui;
+  font-style: normal;
+}
+#here:hover {
+  box-shadow: 0 0 10px #fff, 0 0 30px #fff, 0 0 60px #fff;
+}
+#welled{
+  position: absolute;
+  top:50px;
+  left:50px;
+height: 100%;
+font-size: 30px;
+font-weight: bolder;
+    font-family: "Press Start 2P", system-ui;
+  font-style: normal;
+  color:black;
+ text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
+}
+
+
+

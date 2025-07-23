@@ -1,0 +1,345 @@
+/* body { */
+/* display: flex; */
+/* background-image: url("/VHS\ vignetted\ capture\ effect\,\ Tv\ screen\ noise\ glitch\ and\ transition\ effect\ for\ v\ After\ Effects\ Proje.jpg");
+    background-size: cover;
+    color: white; */
+/* } */
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+body{
+  height:750px;
+  background-color: black;
+    display: flex;
+    flex-direction: column;
+  justify-content:space-evenly;
+}
+#win{
+    height:750px;
+    display: flex;
+    flex-direction: column;
+  justify-content:space-evenly;
+  background-size: cover;
+  z-index: 1;
+}
+.playground {
+  display: flex;
+  justify-content:space-evenly;
+}
+#h1 {
+  display: flex;
+  justify-content: center;
+  font-size: 70px;
+  text-shadow:0 0 10px #ff1e1e, 0 0 20px #ff1e1e, 0 0 40px #ff1e1e;
+ 
+  font-family: "Press Start 2P", system-ui;
+  font-style: normal;
+  font-weight: 800;
+  padding: 20px;
+}
+#h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+     text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
+  font-family: "Press Start 2P", system-ui;
+  font-style: normal;
+  font-weight: 800;
+  padding: 20px;
+}
+h3{
+  color: white;
+  font-size: 20px;
+}
+#chance {
+  display: flex;
+  justify-content: center;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
+  font-family: "Press Start 2P", system-ui;
+  font-style: normal;
+  font-weight: 800;
+}
+.fa-fire{
+  margin-top: 17px;
+  padding-left: 2px;
+  font-size: 25px;
+   text-shadow:0 0 10px #ff1e1e, 0 0 20px #ff1e1e, 0 0 40px #ff1e1e;
+
+  font-family: "Press Start 2P", system-ui;
+  font-style: normal;
+  font-weight: 800;
+}
+.instruction{
+  display: flex;
+  justify-content: center;
+  font-size: 40px;
+    text-shadow: 0 0 10px #ff1e1e, 0 0 20px #ff1e1e, 0 0 40px #ff1e1e;
+
+  font-family: "Press Start 2P", system-ui;
+  font-style: normal;
+  font-weight: 800;
+
+}
+#guess{
+   font-size: 20px;
+   text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
+  font-family: "Press Start 2P", system-ui;
+  font-style: normal;
+  font-weight: 800;
+ 
+}
+.input {
+  display: flex;
+  justify-content: center;
+ 
+  /* flex-direction: column; */
+}
+
+.userInput {
+   background-color: black;
+   border-radius: 5px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+  border: 1px solid white;
+   text-align: center;
+  height: 50px;
+  width: 50px;
+  margin : 30px 10px 10px 10px;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
+  font-family: "Press Start 2P", system-ui;
+  font-style: normal;
+  font-weight: 800;
+
+}
+/* .option1,
+.option2,
+.option3,
+.option4,
+.option5 {
+  height:50px;
+  width:120px;
+font-family: 'Share Tech Mono', monospace;
+  font-size: 1.2rem;
+  padding: 15px 30px;
+  color: #00ff9e;
+  background-color: transparent;
+  border: 2px solid #00ff9e;
+  border-radius: 10px;
+  cursor: pointer;
+  text-shadow: 0 0 5px #00ff9e, 0 0 10px #00ff9e;
+  box-shadow: 0 0 5px #00ff9e, 0 0 20px #00ff9e, inset 0 0 10px #00ff9e;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s;
+  animation: flicker 2s infinite;
+}
+/* .option1, */
+/* .option2,
+.option3,
+.option4,
+.option5:hover {
+  box-shadow: 0 0 10px #fff, 0 0 30px #fff, 0 0 60px #fff;
+} */ 
+ .guess_values{
+ height: 400px;
+ width:800px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ }
+#hackerbtn {
+  align-self: center;
+  height:50px;
+  width:120px;
+  border-radius: 30px;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 1.2rem;
+  padding: 15px 30px;
+  color: #00ff9e;
+  background-color: transparent;
+  border: 2px solid #00ff9e;
+
+  cursor: pointer;
+  text-shadow: 0 0 5px #00ff9e, 0 0 10px #00ff9e;
+  box-shadow: 0 0 5px #00ff9e, 0 0 20px #00ff9e, inset 0 0 10px #00ff9e;
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s;
+  animation: flicker 2s infinite;
+    font-family: "Press Start 2P", system-ui;
+  font-style: normal;
+  font-weight: 800;
+
+}
+
+#hackerbtn::before {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(120deg, transparent 0%, #00ff9e33 50%, transparent 100%);
+  pointer-events: none;
+}
+
+#hackerbtn:hover {
+  background-color: #00ff9e11;
+  box-shadow: 0 0 10px #00ff9e, 0 0 30px #00ff9e, inset 0 0 15px #00ff9e;
+}
+
+@keyframes flicker {
+  0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% {
+    opacity: 1;
+  }
+  20%, 24%, 55% {
+    opacity: 0.4;
+  }
+}
+
+.info01{
+margin-top: 20px;
+    text-shadow: 0 0 5px #00ff9e, 0 0 10px #00ff9e, 0 0 20px #00ff9e, 0 0 40px #00ff9e;
+  font-family: "Press Start 2P", system-ui;
+  font-style: normal;
+  font-weight: 800;
+}
+.hangman {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  border-radius: 30px;
+}
+#ref{
+  display: flex;
+  position: absolute;
+  left:10px;
+ top:10px;
+ 
+}
+pre{
+    font-family: "Press Start 2P", system-ui;
+  font-style: normal;
+  font-weight: 800;
+font-size:15px;
+}
+
+
+#rope {
+  position: absolute;
+  top: 20px;
+  left: 310px;
+  height: 90px;
+  width: 6px;
+  background-color: black;
+}
+
+#face {
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  top: 110px;
+  left: 284px;
+  border-radius: 50%;
+  background-color: black;
+}
+#upperbody {
+  position: absolute;
+  top: 160px;
+  left: 310px;
+  height: 80px;
+  width: 8px;
+  background-color: black;
+}
+#left_arm {
+  position: absolute;
+  top: 170px;
+  left: 287px;
+  height: 50px;
+  width: 8px;
+  background-color: black;
+  rotate: 60deg;
+}
+#right_arm {
+  position: absolute;
+  top: 170px;
+  left: 334px;
+  height: 50px;
+  width: 8px;
+  background-color: black;
+  rotate: 120deg;
+}
+#left_leg {
+  position: absolute;
+  top: 230px;
+  left: 292px;
+  rotate: 35deg;
+  height: 60px;
+  width: 8px;
+  background-color: black;
+}
+#right_leg {
+  position: absolute;
+  top: 230px;
+  left: 327px;
+  rotate: 145deg;
+  height: 60px;
+  width: 8px;
+  background-color: black;
+}
+#start_btn{
+  display: flex;
+  justify-content: center;
+}
+#start{
+ 
+  height:50px;
+  width: 120px;
+  border-radius: 30px;
+    color: #fff;
+  background-color: black;
+  border: 2px solid #fff;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff;
+  box-shadow: 0 0 5px #fff, 0 0 20px #fff, 0 0 40px #fff;
+  transition: 0.3s;
+  margin-top:30px;
+   font-family: "Press Start 2P", system-ui;
+  font-style: normal;
+}
+#start:hover {
+  box-shadow: 0 0 10px #fff, 0 0 30px #fff, 0 0 60px #fff;
+}
+#next_btn{
+  display: flex;
+  justify-content: center;
+}
+.next{
+  height:50px;
+  width: 120px;
+  border-radius: 30px;
+    color: #fff;
+  background-color: black;
+  border: 2px solid #fff;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff;
+  box-shadow: 0 0 5px #fff, 0 0 20px #fff, 0 0 40px #fff;
+  transition: 0.3s;
+  margin-top:30px;
+   font-family: "Press Start 2P", system-ui;
+  font-style: normal;
+}
+#next:hover {
+  box-shadow: 0 0 10px #fff, 0 0 30px #fff, 0 0 60px #fff;
+}
+.fade-out {
+  animation: fadeOut 0.5s forwards;
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}

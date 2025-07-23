@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+body{
+display:flex;
+flex-direction: column;
+justify-content: space-around;
+    background-image: url("/download.gif");
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+.wel{
+    display:flex;
+justify-content: center;
+    font-size: 50px;
+font-weight: bolder;
+    font-family: "Press Start 2P", system-ui;
+  font-style: normal;
+  color:black;
+  text-shadow: 0 0 2px #0f0, 0 0 5px #0f0, 0 0 10px #0f0, 0 0 20px #0f0, 0 0 40px #0f0;
+  padding-top:100px;
+}
+.content{
+display:flex;
+justify-content: center;
+height: 100%;
+font-size: 100px;
+font-weight: bolder;
+    font-family: "Press Start 2P", system-ui;
+  font-style: normal;
+  color: black;
+  text-shadow: 0 0 2px #0f0, 0 0 5px #0f0, 0 0 10px #0f0, 0 0 20px #0f0, 0 0 40px #0f0;
+  padding-top: 20px;
+ 
+}
+.able{
+   display:flex;
+justify-content: center;
+height: 100%;
+font-size: 30px;
+font-weight: bolder;
+    font-family: "Press Start 2P", system-ui;
+  font-style: normal;
+  color:black;
+ text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #fff;
+   padding-top: 300px;
+}
+.enter{
+      align-self: center;
+  height:50px;
+  width: 120px;
+  border-radius: 30px;
+    color: #fff;
+  background-color: black;
+  border: 2px solid #fff;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  text-shadow: 0 0 5px #fff, 0 0 10px #fff;
+  box-shadow: 0 0 5px #fff, 0 0 20px #fff, 0 0 40px #fff;
+  transition: 0.3s;
+  margin-top:30px;
+   font-family: "Press Start 2P", system-ui;
+  font-style: normal;
+}
+.enter:hover {
+  box-shadow: 0 0 10px #fff, 0 0 30px #fff, 0 0 60px #fff;
+}
+.fade-out {
+  animation: fadeOut 0.5s forwards;
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
