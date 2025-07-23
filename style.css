@@ -3,7 +3,7 @@ body{
 display:flex;
 flex-direction: column;
 justify-content: space-around;
-    background-image: url("./download.gif");
+    background-image: url("/download.gif");
     background-size: cover;
     background-position: center;
     cursor: pointer;
