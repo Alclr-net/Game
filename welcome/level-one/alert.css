@@ -7,7 +7,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-image: url("/Cyberpunk\ Aesthetic.gif");
+  background-image: url("/cyber.gif");
   background-size: cover;
 }
 
